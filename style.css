@@ -3,12 +3,15 @@ body{
     padding: 0;
     font-family: 'Raleway', sans-serif;
     background-color:rgba(202, 31, 97, 0.526);
+    text-align: center;
 }
 
 header{
     background-color: dimgray;
 }
 
+    
+    
 main{
     text-align: center;
 }
@@ -30,6 +33,19 @@ main{
     margin-bottom: 70px;
     color: #333;
 
+}
+@media screen and (min-width: 768px) {
+   
+    title{
+        font-size: 24px;
+    }
+
+    
+}
+img{
+    display: flex;
+    object-fit: cover;
+    width: 100%;
 }
 #img-div {
     text-align: center;
@@ -53,26 +69,40 @@ main{
 
 }
 .awards{
-    text-align: center;
+
     font-family:'Raleway', sans-serif ;
-    margin:30px;
+    margin: 0 100px;
     padding: 30px;
     font-size: 20px;
     color: #333;
-    display: grid;
+    
+}
+.list{
+    width: 50%;
+    margin: 10px;
+    
+    
 }
 .ul{
     
     max-width: 550px;
-    padding-inline-start: 40px;
-    margin: 0 auto 50px auto;
-    line-height: 1.6;
-    
+    margin-right: 100px;
+    margin-left: 100px;
+    line-height: 1.6rem;
+    text-align: left;
+   
+
+
 }
 li{
-    margin: 16px 0;
-    text-align:left;
+    margin:16px;
+    text-align: left;
     padding-right: 50px;
+    display: block;
+}
+#list-wraper{
+    display: flex;
+    flex-direction: row;
 }
 #current_date{
     position: fixed;
@@ -93,21 +123,61 @@ footer{
     display: block;
     text-align: center;
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     padding-bottom: 20px;
 }
 .comments{
-display: inline-flex;
+
 margin: 30px;
 }
 .quote{
     padding:15px;
-    color:rgb(68, 74, 65);
+    color:rgb(127, 133, 123);
+    background-color: rgba(219, 217, 217, 0.353);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin: 50px;
+   
 }
-@media screen and (max-width: 1440px) {
+p{
+    margin: 10px;
+ 
+}
+@media (max-width:1508px) {
 
-    #image {
-        max-width: 90%;
-        font-size: 1.2rem;
+h1{
+    font-size:3.5rem;
+}
+#img-caption{
+    font-size: 1.4rem;
+}
+.comments{
+    display: flex;
+    flex-direction: row;
+}
+#list-wrap{
+    flex-direction: column;
+}
+
+}
+
+@media (max-width:1003px){
+    .list{
+        display: block;
+        width:100%;
     }
+    .quote{
+        margin: 10px;
+
+    }
+    }
+
+
+
+@media (min-width:1444px) {
+  
+#list-wrap{
+    display: flex;
+}
 }
